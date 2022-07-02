@@ -9,7 +9,9 @@ function ExpenseData(AllProps)
                 {
                     return(
                         <div className="AllExpsnse">
-                            <HandleDate Props={NewData}/>
+                            <p className="DateD" style={{ textAlign: "center" }}>
+                                <HandleDate Props={NewData}/>
+                            </p>
                             <p className="NameN">{NewData.Name}</p>
                             <p className="AmountA">{NewData.Amount+'$'}</p>
                         </div>

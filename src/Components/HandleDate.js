@@ -1,55 +1,54 @@
 function HandleDate(Props) {
     let MonthName = (Num) => {
+        let Ret;
         switch (Num) {
             case 1:
-                return 'Jan';
+                Ret= 'Jan';
                 break;
             case 2:
-                return 'Feb';
+                Ret= 'Feb';
                 break;
             case 3:
-                return 'Mar';
+                Ret= 'Mar';
                 break;
             case 4:
-                return 'Apr';
+                Ret= 'Apr';
                 break;
             case 5:
-                return 'May';
+                Ret= 'May';
                 break;
             case 6:
-                return 'Jun';
+                Ret= 'Jun';
                 break;
             case 7:
-                return 'Jul';
+                Ret= 'Jul';
                 break;
             case 8:
-                return 'Aug';
+                Ret= 'Aug';
                 break;
             case 9:
-                return 'Sep';
+                Ret= 'Sep';
                 break;
             case 10:
-                return 'Oct';
+                Ret= 'Oct';
                 break;
             case 11:
-                return 'Nov';
+                Ret= 'Nov';
                 break;
             case 12:
-                return 'Dec';
+                Ret= 'Dec';
                 break;
 
             default:
-                return 'Wrong Date'
                 break;
         }
+        return Ret;
     }
     return (
         <div>
-            <p className="DateD" style={{ textAlign: "center" }}>
                 <p>{new Date(Props.Props.Date).getDate()}</p>
                 <p>{MonthName(new Date(Props.Props.Date).getMonth() + 1)}</p>
                 <p>{new Date(Props.Props.Date).getFullYear()}</p>
-            </p>
         </div>
     )
 }
