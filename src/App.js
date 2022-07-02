@@ -1,10 +1,10 @@
-// import React from "react";
 import './App.css'
+import ExpenseForm from './Components/ExpenseForm'
 
 let App = () => {
     return (
         <div>
-            Hello World
+            <ExpenseForm/>
         </div>
     )
 }

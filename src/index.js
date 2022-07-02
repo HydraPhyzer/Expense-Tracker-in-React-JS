@@ -1,7 +1,10 @@
-import ReactDOM  from "react-dom";
+import ReactDOM from "react-dom/client";
 import App from './App'
 import './Index.css'
-ReactDOM.render(
+
+let Root=ReactDOM.createRoot(document.getElementById('root'));
+
+Root.render(
+
     <App/>
-    ,document.getElementById('root')
 )

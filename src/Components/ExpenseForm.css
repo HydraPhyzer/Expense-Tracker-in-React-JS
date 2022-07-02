@@ -1,0 +1,39 @@
+.ExpenseForm
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.EnpenseForm__div
+{
+    border: 1px solid ;
+    padding: 10px;
+    margin: 10px;
+}
+.Data
+{
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+}
+input[type='submit']
+{
+    border: none;
+    background: rgb(0, 95, 133);
+    color: white;
+    padding: 5px;
+}
+input
+{
+    border-radius: 0px;
+    outline: none;
+    padding: 5px;
+}
+input:focus
+{
+    outline: none;
+}
+input[type='submit']:hover
+{
+    cursor: pointer;
+}
