@@ -11,7 +11,7 @@ function ExpenseData(AllProps)
                         <div className="AllExpsnse">
                             <HandleDate Props={NewData}/>
                             <p className="NameN">{NewData.Name}</p>
-                            <p className="AmountA">{NewData.Amount}</p>
+                            <p className="AmountA">{NewData.Amount+'$'}</p>
                         </div>
                     )
                 })

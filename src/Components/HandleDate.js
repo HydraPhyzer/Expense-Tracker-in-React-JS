@@ -1,11 +1,53 @@
-// import React from 'react'
-
 function HandleDate(Props) {
+    let MonthName = (Num) => {
+        switch (Num) {
+            case 1:
+                return 'Jan';
+                break;
+            case 2:
+                return 'Feb';
+                break;
+            case 3:
+                return 'Mar';
+                break;
+            case 4:
+                return 'Apr';
+                break;
+            case 5:
+                return 'May';
+                break;
+            case 6:
+                return 'Jun';
+                break;
+            case 7:
+                return 'Jul';
+                break;
+            case 8:
+                return 'Aug';
+                break;
+            case 9:
+                return 'Sep';
+                break;
+            case 10:
+                return 'Oct';
+                break;
+            case 11:
+                return 'Nov';
+                break;
+            case 12:
+                return 'Dec';
+                break;
+
+            default:
+                return 'Wrong Date'
+                break;
+        }
+    }
     return (
         <div>
             <p className="DateD" style={{ textAlign: "center" }}>
                 <p>{new Date(Props.Props.Date).getDate()}</p>
-                <p>{new Date(Props.Props.Date).getMonth()+1}</p>
+                <p>{MonthName(new Date(Props.Props.Date).getMonth() + 1)}</p>
                 <p>{new Date(Props.Props.Date).getFullYear()}</p>
             </p>
         </div>
