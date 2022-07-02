@@ -1,0 +1,37 @@
+.WholeData
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.AllExpsnse
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    background-color: #34495e;
+    color: white;
+    width: 50vw;
+}
+.DateD , .AmountA
+{
+    padding: 10px;
+    border: 1px solid white;
+    margin: 10px;
+}
+.NameN
+{
+    padding: 10px;
+    margin: 10px;
+}
+.AmountA
+{
+    justify-self: flex-end;
+    background-color: #1abc9c;
+    border: none ;
+}
